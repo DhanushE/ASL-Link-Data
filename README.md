@@ -3,7 +3,7 @@
 
 > Powered and Supported by handspeak.com
 
-> This repository has been archived on September 13th 2021
+> This repository was archived on September 13th 2021
 
 A small python snippet (part of ASL Link Application) that generates a JSON file that contains "words" associated with links. For example the word "box" is associated with [this](https://www.handspeak.com/word/search/index.php?id=2683) link.
 
