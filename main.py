@@ -37,4 +37,5 @@ def generateWordsFile(starting=1, maximum=100, filename='words.json'):
             json.dump(data, file)
 
 
-generateWordsFile(starting=1, maximum=10464)
+if __name__ == "__main__":
+	generateWordsFile(starting=1, maximum=10464)
