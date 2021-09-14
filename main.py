@@ -3,6 +3,11 @@ from bs4 import BeautifulSoup
 import json
 
 def getTitle(id=1):
+	"""
+	DOCSTRING
+	This function obtains the title of a word that coressponds with a certain link.
+	Parameters include the id (an integer ranging from 1 to 10464)
+	"""
     url = f"https://www.handspeak.com/word/search/index.php?id={id}"
     get_url = requests.get(url)
     get_text = get_url.text
@@ -12,6 +17,11 @@ def getTitle(id=1):
     return (title, url)
 
 def generateWordsFile(starting=1, maximum=100, filename='words.json'):
+	"""
+	DOCSTRING
+	This function commences a loop starting from an integer (starting) till a maximum (maximum), while updating the .json file
+	Parameters include starting (integer), maximum (integer) and filename (string)
+	"""
     for x in range(starting, maximum + 1):
         title, url = getTitle(x)
         entry = {
