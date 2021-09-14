@@ -14,8 +14,11 @@ def getTitle(id=1):
 def generateWordsFile(starting=1, maximum=100, filename='words.json'):
     for x in range(starting, maximum + 1):
         title, url = getTitle(x)
-        entry = {f"{title}":f"{url}"}
-        print(title, x)
+        entry = {
+			"name":f"{title}",
+			"link": f"{url}"
+		}
+        print(title, x) # Optional
         with open('words.json', "r+") as file:
             data = json.load(file)
             data.append(entry)
@@ -23,5 +26,5 @@ def generateWordsFile(starting=1, maximum=100, filename='words.json'):
             file.seek(0)
             json.dump(data, file)
 
-if __name__ == "__main__":
-  generateWordsFile(starting=1, maximum=10464) # Change this to whatever you link
+
+generateWordsFile(starting=1, maximum=10464)
