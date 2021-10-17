@@ -4,7 +4,7 @@
 > Powered by handspeak.com
 
 
-This is a small python snippet (part of ASL Link Application) that generates a JSON file that contains "words" associated with links. For example the word "box" is associated with [this](https://www.handspeak.com/word/search/index.php?id=2683) link.
+This is a small python snippet (part of ASLink Application) that generates a JSON file that contains "words" associated with links. For example the word "box" is associated with [this](https://www.handspeak.com/word/search/index.php?id=2683) link.
 
 If you are only intrested in the final result of this program, examine [this](https://github.com/DhanushE/ASL-Link-Data/blob/main/words_after_program.json) file which contains all of the data on the handspeak website.
 
