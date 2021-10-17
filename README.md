@@ -1,7 +1,7 @@
 ## ASL Link Data
 > Written in Python Version 3, using requests and beautiful soup.
 
-> Powered and Supported by handspeak.com
+> Powered by handspeak.com
 
 
 This is a small python snippet (part of ASL Link Application) that generates a JSON file that contains "words" associated with links. For example the word "box" is associated with [this](https://www.handspeak.com/word/search/index.php?id=2683) link.
